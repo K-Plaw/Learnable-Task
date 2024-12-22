@@ -101,5 +101,5 @@ git add <resolved-file>
 git cherry-pick --continue
 Cherry-pick is useful when you want to bring specific changes from one branch without bringing in everything else!
 
-#NOTE:
+# NOTE:
 Everything in angle brackets "<>" is to be edited to specification.
