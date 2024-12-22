@@ -70,3 +70,36 @@ Downloads updates (commits, branches) from a remote repository but does not merg
 
 git pull:
 Does the same as git fetch but automatically merges the updates into your current branch. Essentially, git pull is a combination of git fetch followed by git merge.
+
+# Git Rebase in Simple Terms:
+Git rebase moves your changes from one branch onto another, replaying your commits on top of the latest branch changes. This helps keep your history clean without creating merge commits.
+
+How to Use:
+1. git checkout feature-branch
+2. git rebase main
+3. git add <file>
+git rebase --continue
+4. git push --force
+
+# Git Cherry-pick in Simple Terms:
+Git cherry-pick allows you to apply a specific commit from one branch to another. It's like picking a commit from a tree and applying it where you need it without merging the whole branch.
+
+How to Use:
+1. Find the commit you want to apply:
+Use git log to find the commit hash (the long alphanumeric string).
+
+2. Cherry-pick the commit:
+Run this command to apply the commit to your current branch:
+
+git cherry-pick <commit-hash>
+Replace <commit-hash> with the actual commit ID.
+
+3. Handle conflicts:
+If there are conflicts, resolve them, then continue:
+
+git add <resolved-file>
+git cherry-pick --continue
+Cherry-pick is useful when you want to bring specific changes from one branch without bringing in everything else!
+
+# NOTE:
+Everything in angle brackets "<>" is to be edited to specification.
